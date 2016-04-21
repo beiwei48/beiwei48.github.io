@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://beiwei48.github.io/sitemap.xml 
