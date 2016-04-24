@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://beiwei48.github.io/atom.xml" rel="self"/>
   <link href="http://beiwei48.github.io/"/>
-  <updated>2016-04-24T20:00:30+08:00</updated>
+  <updated>2016-04-24T20:01:33+08:00</updated>
   <id>http://beiwei48.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,9 +18,7 @@
     <link href="http://beiwei48.github.io/blog/2016/04/24/first-page/"/>
     <updated>2016-04-24T19:55:47+08:00</updated>
     <id>http://beiwei48.github.io/blog/2016/04/24/first-page</id>
-    <content type="html"><![CDATA[<h1>first page</h1>
-
-<h3>做个测试，无他</h3>
+    <content type="html"><![CDATA[<h3>做个测试，无他</h3>
 
 <blockquote><p>年年不忘，必有回响。</p></blockquote>
 ]]></content>
