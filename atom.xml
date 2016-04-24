@@ -4,7 +4,7 @@
   <title><![CDATA[beiwei48 blog]]></title>
   <link href="http://beiwei48.com/atom.xml" rel="self"/>
   <link href="http://beiwei48.com/"/>
-  <updated>2016-04-24T20:27:16+08:00</updated>
+  <updated>2016-04-24T20:41:28+08:00</updated>
   <id>http://beiwei48.com/</id>
   <author>
     <name><![CDATA[Bei Wei48]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[First Page]]></title>
-    <link href="http://beiwei48.com/blog/first-page.html/"/>
+    <link href="http://beiwei48.com/blog/2016/04/24/first-page/"/>
     <updated>2016-04-24T19:55:47+08:00</updated>
-    <id>http://beiwei48.com/blog/first-page</id>
+    <id>http://beiwei48.com/blog/2016/04/24/first-page</id>
     <content type="html"><![CDATA[<h3 id="section">做个测试，无他</h3>
 <blockquote>
   <p>念念不忘，必有回响。</p>
