@@ -1,4 +1,6 @@
 # 工具集
+收集常用软件
+
 ### 编辑器
 - vim (for command edit)
 - Sublime (for html,css,js,python)
@@ -13,6 +15,8 @@
 ### 文档管理
 - 百度云，软件包，电影， 电视
 - 印象笔记, 主要记录笔记，工作
+- 代码管理, git, sourcetree
+- 绘图, xmind(流程图)
 
 ### 翻墙
 - vps(Vultr)梯子
