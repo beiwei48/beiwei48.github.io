@@ -4,7 +4,7 @@
   <title><![CDATA[beiwei48 blog]]></title>
   <link href="http://beiwei48.com/atom.xml" rel="self"/>
   <link href="http://beiwei48.com/"/>
-  <updated>2016-09-09T22:25:48+08:00</updated>
+  <updated>2016-09-13T17:49:31+08:00</updated>
   <id>http://beiwei48.com/</id>
   <author>
     <name><![CDATA[Bei Wei48]]></name>
@@ -12,6 +12,71 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Golang Interface Hidden]]></title>
+    <link href="http://beiwei48.com/blog/2016/09/13/golang-interface-hidden/"/>
+    <updated>2016-09-13T00:00:00+08:00</updated>
+    <id>http://beiwei48.com/blog/2016/09/13/golang-interface-hidden</id>
+    <content type="html"><![CDATA[<h3 id="golang-">golang 接口为隐式实现，不存在关键字显示定义，如下示例：</h3>
+<pre><code>package main
+
+import (
+	"fmt"
+)
+
+type m1 struct {
+	Name string
+}
+func (m *m1) Write() {
+	fmt.Println(m.Name)
+}
+func (m *m1) Read() {
+	fmt.Println(m.Name + ":read")
+}
+
+
+type m2 struct {
+	StoreName string
+}
+func (m *m2) Write() {
+	fmt.Println(m.StoreName)
+}
+func (m *m2) Read() {
+	fmt.Println(m.StoreName + ":read")
+}
+
+type Test interface {
+	Write()
+}
+
+type Test1 interface {
+	Read()
+}
+
+func Do(p Test) {
+	p.Write()
+}
+
+func Do1(p Test1) {
+	p.Read()
+}
+
+func main() {
+	p1 := new(m1)
+	p1.Name = "m1 name"
+	Do(p1)
+	Do1(p1)
+
+	p2 := new(m2)
+	p2.StoreName = "m2 stroename"
+	Do(p2)
+	Do1(p2)
+}
+</code></pre>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tool Set]]></title>

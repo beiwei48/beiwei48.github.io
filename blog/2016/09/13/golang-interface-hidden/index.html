@@ -1,0 +1,57 @@
+<h3 id="golang-">golang 接口为隐式实现，不存在关键字显示定义，如下示例：</h3>
+<pre><code>package main
+
+import (
+	"fmt"
+)
+
+type m1 struct {
+	Name string
+}
+func (m *m1) Write() {
+	fmt.Println(m.Name)
+}
+func (m *m1) Read() {
+	fmt.Println(m.Name + ":read")
+}
+
+
+type m2 struct {
+	StoreName string
+}
+func (m *m2) Write() {
+	fmt.Println(m.StoreName)
+}
+func (m *m2) Read() {
+	fmt.Println(m.StoreName + ":read")
+}
+
+type Test interface {
+	Write()
+}
+
+type Test1 interface {
+	Read()
+}
+
+func Do(p Test) {
+	p.Write()
+}
+
+func Do1(p Test1) {
+	p.Read()
+}
+
+func main() {
+	p1 := new(m1)
+	p1.Name = "m1 name"
+	Do(p1)
+	Do1(p1)
+
+	p2 := new(m2)
+	p2.StoreName = "m2 stroename"
+	Do(p2)
+	Do1(p2)
+}
+</code></pre>
+
